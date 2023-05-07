@@ -7,21 +7,37 @@ import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-  }
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(27, 2, 7, 1) 100%
+  );
+}
 `;
 
 const AppContainer = styled.div`
 	font-family: Roboto, Arial, sans-serif;
-	background-color: #191b28;
-	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	background: none;
+	box-shadow: 
+  rgba(0, 0, 0, 0.19) 0px 10px 30px, 
+  rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	max-width: 300px;
-	margin: 30px auto;
-	padding: 20px;
-	border-radius: 8px;
+	margin: 20px auto;
+	padding: 30px;
+	border-radius: 19px;
+  h1 {
+    color: #fff;
+    text-align: center;
+  }
 `;
 
 const ExpressionDisplay = styled.div`
@@ -170,21 +186,21 @@ function App() {
   style={{ gridColumn: 4, gridRow: 4 }}
 />
 <NumberButtonStyled
-  label='0'
-  onClick={() => handleButtonClick('0')}
+  label='.'
+  onClick={() => handleButtonClick('.')}
   style={{ gridColumn: 2, gridRow: 5 }}
 />
 <NumberButtonStyled
-  label='.'
-  onClick={() => handleButtonClick('.')}
+  label='0'
+  onClick={() => handleButtonClick('0')}
   style={{ gridColumn: 1, gridRow: 5 }}
 />
 <OperationButtonStyled
   label='='
   onClick={handleCalculate}
-  style={{ gridColumn: 4/5, gridRow: 5 }}
+  style={{ gridColumn: '3/ span ', gridRow: 5}}
 />
-				</ButtonGrid>
+</ButtonGrid>
 			</AppContainer>
 		</>
 	);

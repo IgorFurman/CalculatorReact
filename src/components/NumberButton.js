@@ -11,9 +11,8 @@ import styled from "styled-components";
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-
-
-
+	display: grid;
+	
   &:hover {
     background-color: #ddd;
   }
