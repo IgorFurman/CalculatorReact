@@ -14,9 +14,9 @@ The application manages all inputs through the local state and react hooks. The 
 
 The styling of the calculator is handled through styled-components to create a clean and responsive layout. It includes the grid of buttons as well as individual styles for number, operation, and clear buttons. These styles also include hover effects for a better user experience.
 
-**Project Structure**
-The main application logic resides in App.js. It handles all the calculator operations and also renders the main components. The styled-components are in a separate file and imported into App.js.
+# Project Structure 
 
+The main application logic resides in App.js. It handles all the calculator operations and also renders the main components. The styled-components are in a separate file and imported into App.js.
 This application consists of several reusable components:
 
 - **NumberButton**: Displays a button with a number and triggers the handleButtonClick function when clicked.
