@@ -7,8 +7,7 @@ This project is a simple, yet powerful calculator application built using React.
 - Basic arithmetic operations including addition, subtraction, multiplication, and division.Supports more complex mathematical operations such as percentage and square operation (^).
 - Clear all input using the clear button (C).
 - Clean and intuitive UI which includes an input display and an interactive grid of buttons.
-
-- 
+  
 # How it Works
 The application manages all inputs through the local state and react hooks. The state is updated when you press a button on the calculator. The evaluate function from the mathjs library is used to calculate the result when you press the equals button (=).
 
