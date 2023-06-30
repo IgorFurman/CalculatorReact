@@ -1,6 +1,8 @@
 # React Calculator
 This project is a simple, yet powerful calculator application built using React.js, styled-components, and the mathjs library.
 
+You can check it out live [here](https://igorfurman.github.io/CalculatorReact/)
+
 
 # Features
 
