@@ -27,7 +27,7 @@ This application consists of several reusable components:
 - **OperationButton**: Displays a button with an operation symbol and triggers the `handleButtonClick` function when clicked.
 - **ClearButton**: Displays a button for clearing all inputs and triggers the `handleClear` function when clicked.
 
-## 🚀 Setup
+## 🛴 Setup
 
 If you want to try out the project locally, follow these steps:
 
